@@ -77,12 +77,15 @@ const ThemeSwitcher = () => {
   );
 };
 
-export default function Footer({ copyrightText }) {
+export default function Footer() {
   return (
     <footer className="py-16 flex flex-col items-center">
-      <p className="dark:text-white uppercase mb-3 font-bold opacity-60">
-        {copyrightText}
-      </p>
+      <a
+        href="https://dashboard.mailerlite.com/forms/525477/94733838280819778/share"
+        className="dark:text-white mb-3 opacity-60 underline"
+      >
+        You should click here to get development updates via electronic mail
+      </a>
       <ThemeSwitcher />
     </footer>
   );
